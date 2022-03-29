@@ -18,7 +18,7 @@ std::vector <int> deleteElem(std::vector <int> &array, int element) {
     return array;
 }
 
-void print(std::vector <int> &array) {
+void printVector(std::vector <int> &array) {
     std::cout << "\nArray:\n";
     for (int i = 0; i < array.size(); i++) {
         std::cout << array[i] << " ";
@@ -54,10 +54,10 @@ int main() {
         std::cin >> value;
         array.push_back(value);
     }
-    print(array);
+    printVector(array);
     
     std::vector <int> finalArray = deleteElem(array, 3);
-    print(finalArray);
+    printVector(finalArray);
     
     std::vector <int> testArray1 = {28, 9, -6, 23, 52, 33, 54, 75, 3, 45, 66, 21, 34, 55, 22, 12, -12, 44};
     testArray1 = deleteElem(testArray1, 3);
